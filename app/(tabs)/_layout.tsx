@@ -11,7 +11,7 @@ function TabIcon({
 }: {
   name: IoniconsName;
   focused: boolean;
-  color: string;
+  color: string | undefined;
 }) {
   return <Ionicons name={focused ? name : `${name}-outline` as IoniconsName} size={24} color={color} />;
 }
@@ -41,7 +41,7 @@ export default function TabLayout() {
         options={{
           title: 'Daily',
           tabBarIcon: ({ focused, color }) => (
-            <TabIcon name="book" focused={focused} color={color} />
+            <TabIcon name="book" focused={focused} color={color as string} />
           ),
         }}
       />
@@ -50,7 +50,7 @@ export default function TabLayout() {
         options={{
           title: 'Library',
           tabBarIcon: ({ focused, color }) => (
-            <TabIcon name="library" focused={focused} color={color} />
+            <TabIcon name="library" focused={focused} color={color as string} />
           ),
         }}
       />
@@ -59,7 +59,7 @@ export default function TabLayout() {
         options={{
           title: 'Favorites',
           tabBarIcon: ({ focused, color }) => (
-            <TabIcon name="heart" focused={focused} color={color} />
+            <TabIcon name="heart" focused={focused} color={color as string} />
           ),
         }}
       />
@@ -68,7 +68,7 @@ export default function TabLayout() {
         options={{
           title: 'Settings',
           tabBarIcon: ({ focused, color }) => (
-            <TabIcon name="settings" focused={focused} color={color} />
+            <TabIcon name="settings" focused={focused} color={color as string} />
           ),
         }}
       />
