@@ -19,7 +19,8 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "versionCode": 2
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +37,15 @@
           "color": "#C9A84C"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "26556bc1-1c83-4a7b-8a84-ffa0cccbe746"
+      }
+    },
+    "owner": "boco-cyber"
   }
 }
