@@ -9,7 +9,10 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.imitatio.app"
+      "bundleIdentifier": "com.imitatio.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.imitatio.app",
@@ -43,9 +46,9 @@
         "origin": false
       },
       "eas": {
-        "projectId": "26556bc1-1c83-4a7b-8a84-ffa0cccbe746"
+        "projectId": "8ea3c97c-a67b-41a6-bbfe-d22483d7ce7c"
       }
     },
-    "owner": "boco-cyber"
+    "owner": "wisdom-of-the-poor-1"
   }
 }
